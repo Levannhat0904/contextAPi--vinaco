@@ -1,12 +1,12 @@
 import "./App.css";
-import { UserProvider } from "./context/UserContext";
-import ParentComponent from "./Parent/ParentComponent";
+import Header from "./Header/Header";
+import { UserProvider } from "./UserProfile/UserProfile";
 
 function App() {
   return (
     <div className="App">
       <UserProvider>
-        <ParentComponent />
+        <Header />
       </UserProvider>
     </div>
   );

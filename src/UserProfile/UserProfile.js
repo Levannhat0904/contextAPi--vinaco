@@ -5,7 +5,7 @@ const UserContext = createContext();
 
 // Tạo Provider component
 export const UserProvider = ({ children }) => {
-  const [userName, setUserName] = useState("Lê Nhật"); // Giá trị mặc định
+  const [userName, setUserName] = useState("Lê Văn Nhật"); // Giá trị mặc định
   return (
     <UserContext.Provider value={{ userName, setUserName }}>
       {children}
