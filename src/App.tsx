@@ -1,13 +1,23 @@
 import "./App.css";
+import { AuthProvider } from "./auth/AuthContext";
+import Setting from "./auth/component/ComponentSetting";
 import Header from "./Header/Header";
-import { UserProvider } from "./UserProfile/UserProfile";
+import { ThemeProvider } from "./theme/ThemeConText";
+import { UserProvider } from "./user/UserContext";
 
 function App() {
   return (
     <div className="App">
-      <UserProvider>
+      {/* <UserProvider>
         <Header />
+      </UserProvider> */}
+      {/* <AuthProvider> */}
+      <UserProvider>
+        <ThemeProvider>
+          <Setting />
+        </ThemeProvider>
       </UserProvider>
+      {/* </AuthProvider> */}
     </div>
   );
 }
